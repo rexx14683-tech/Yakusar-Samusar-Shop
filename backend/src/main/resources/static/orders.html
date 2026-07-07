@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Orders - Yakuza Samusar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-orange-50 min-h-screen">
+  <nav id="nav" class="bg-white shadow-sm"></nav>
+
+  <div class="max-w-3xl mx-auto px-4 py-6">
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Your Orders</h1>
+
+    <p id="error" class="hidden bg-red-100 text-red-700 text-sm rounded-md p-2 mb-4"></p>
+    <p id="empty" class="hidden text-gray-500 text-center mt-10">You haven't placed any orders yet.</p>
+
+    <div id="orders-list" class="space-y-4"></div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/orders.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Yakuza Samusar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-orange-50 min-h-screen">
+  <nav id="nav" class="bg-white shadow-sm"></nav>
+
+  <div class="max-w-5xl mx-auto px-4 py-6">
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Our Menu</h1>
+
+    <div class="flex flex-wrap gap-3 mb-6 bg-white p-4 rounded-lg shadow-sm">
+      <input id="search" type="text" placeholder="Search food..." class="flex-1 min-w-[160px] border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500" />
+      <select id="category-filter" class="border border-gray-300 rounded-md px-3 py-2">
+        <option value="">All categories</option>
+      </select>
+      <input id="min-price" type="number" min="0" step="0.01" placeholder="Min price" class="w-28 border border-gray-300 rounded-md px-3 py-2" />
+      <input id="max-price" type="number" min="0" step="0.01" placeholder="Max price" class="w-28 border border-gray-300 rounded-md px-3 py-2" />
+      <button id="filter-btn" class="bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700 transition">Filter</button>
+    </div>
+
+    <p id="error" class="hidden bg-red-100 text-red-700 text-sm rounded-md p-2 mb-4"></p>
+    <p id="empty" class="hidden text-gray-500 text-center mt-10">No food items match your filters.</p>
+
+    <div id="food-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"></div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

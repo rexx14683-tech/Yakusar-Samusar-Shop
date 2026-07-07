@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8090/api/categories)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //PID 17300 //F)",
+      "Bash(echo \"exit_code=$?\")",
+      "Bash(node static-server.js 5500)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5500/)",
+      "Bash(gh auth *)",
+      "PowerShell(gh --version)",
+      "PowerShell(gh auth status 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\MSI KATANA\\\\food-store-app\" && touch backend/uploads/.gitkeep)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\MSI KATANA\\food-store-app\\backend\\uploads"
+    ]
+  }
+}

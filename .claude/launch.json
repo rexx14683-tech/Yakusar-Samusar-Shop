@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "backend",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": [
+        "/c",
+        "set \"JAVA_HOME=C:\\Users\\MSI KATANA\\.jdk\\jdk-21.0.8\" && set \"PATH=C:\\Users\\MSI KATANA\\.jdk\\jdk-21.0.8\\bin;C:\\Users\\MSI KATANA\\.maven\\maven-3.9.12\\bin;%PATH%\" && cd /d \"C:\\Users\\MSI KATANA\\food-store-app\\backend\" && mvn spring-boot:run"
+      ],
+      "port": 8080
+    },
+    {
+      "name": "frontend",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "serve", "-l", "5500", "C:\\Users\\MSI KATANA\\food-store-app\\frontend"],
+      "port": 5500
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# Maven
+backend/target/
+
+# Logs
+backend/app-out.log
+backend/app-err.log
+*.log
+
+# Uploaded user content
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
